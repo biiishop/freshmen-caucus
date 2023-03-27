@@ -1,37 +1,68 @@
 body {
-  background-color: #265077;
-  
+  background-color: #EEEEEE;
+  color: hsl(0, 0%, 20%);
+}
+#logo {
+  background-color: #022140;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  bottom: 220px;
+  left: 80px;
+  color: #BBBBBB;
+  text-align: center;
 }
 #freshmancaucus {
   padding: 20px;
   text-align: center;
-  background:  #022140;
-  color: white;
+  background:  #BBBBBB;
   font-size: 30px;
 }
 #classof {
   position:relative;
   left: -200px;
   top: 2px;
+  animation: color-change 1s infinite;
+}
+#meetthepresidents {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  
+}
+@keyframes color-change {
+  0% { color: #333333; }
+  25% { color: #BBBBBB; }
+  50% { color: #CCCCCC; }
+  75% { color: #DDDDDD; }
+  100% { color: #EEEEEE; }
+}
+#presidents {
+  height: 1060px;
 }
 #cayla {
+  text-align: center;
   position: absolute;
-  background-color: #494B68;
+  background-color: #BBBBBB;
   height: 700px;
   width: 600px;
   left: 155px;
   top: 900px;
-  border-radius: 14%;
+  border-radius: 4%;
   margin: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #vanna {
+  text-align: center;
   position: relative;
   top: 100px;
-  background-color: #474964;
+  background-color: #BBBBBB;
   height: 700px;
   width: 600px;
-  border-radius: 14%;
+  border-radius: 4%;
   margin: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .box:hover {
   transform: scale(1.03);
@@ -42,34 +73,49 @@ body {
 #description {
   position: absolute;
   top: 50px;
-  width: 400px;
+  width: 800px;
   height: 300px;
   padding: 20px;
   border-radius: 14%;
-  background-color: #2d5f5d;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-
 #vanadescription {
-  width: 500px;
+  width: 800px;
   position: absolute;
   left: 1000px;
-  bottom: -170px;
-  background-color: #2d5f5d;
+  bottom: -400px;
+  background-color: #e2e2e2;
   color: #022140;
   font-size: 18px;
   border-radius: 1%;
   padding: 12px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 }
-
 #cayladescription {
-  width: 500px;
+  width: 800px;
   position: absolute;
   left: 1000px;
-  bottom: -600px;
-  background-color: #2d5f5d;
+  top: 1100px;
+  background-color: #e2e2e2;
   color: #022140;
   font-size: 18px;
   border-radius: 1%;
   padding: 12px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+#transitiondiv {
+  height: 100px;
+  background: linear-gradient( #EEEEEE,#EFEBD6 );
+}
+#FaQ {
+  background-color: #EFEBD6;
+  text-align: center;
+  font-size: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  margin-top: 0px;
+  height: 1000px;
+  color: #bbbe09;
+}
+#FaQh2 {
+  margin: 0px;
 }

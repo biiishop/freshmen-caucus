@@ -29,20 +29,23 @@ export default function Home() {
     <>
       <div id="freshmancaucus">
         <h3 id="classof">'2026</h3>
-        <h1>Freshman</h1>
-        <h1>Caucus</h1>
+        <h1>Freshman Caucus</h1>
       </div>
+      <div id="logo">
+        <p>logo</p>
+      </div>
+      <h1 id="meetthepresidents">Meet the Presidents</h1>
       <div id="presidents">
         <div
           className={`box ${vannaOnTop ? 'on-top' : ''}`}
           id="vanna"
           onClick={() => handleClick('vanna')}
-        />
+        >Vanna picture</div>
         <div
           className={`box ${caylaOnTop ? 'on-top' : ''}`}
           id="cayla"
           onClick={() => handleClick('cayla')}
-        /> 
+        >Cayla picture</div> 
         <div id="presidentdescription">
           {vannaOnTop ? (
               <div id="vanadescription">
@@ -54,7 +57,10 @@ export default function Home() {
               </div>
             ) : null}
         </div>
-
+      </div>
+      <div id ="transitiondiv"></div>
+      <div id="FaQ">
+        <h2 id="FaQh2">FaQ</h2>
       </div>
     </>
   )
