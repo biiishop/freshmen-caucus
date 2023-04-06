@@ -25,6 +25,12 @@ function Home() {
         <div id="mag3">Mag</div>
         <div id="mag4">Mag</div>
       </div>
+      <div id="event">
+        <h1 id="event-title">Events</h1>
+        <ul>
+          <li>yur mom</li>
+        </ul>
+      </div>
     </>
   );
 }
