@@ -2,28 +2,7 @@ body {
   background-color: #EEEEEE;
   color: hsl(0, 0%, 20%);
 }
-#logo {
-  background-color: #022140;
-  width: 180px;
-  height: 180px;
-  position: relative;
-  bottom: 220px;
-  left: 80px;
-  color: #BBBBBB;
-  text-align: center;
-}
-#freshmancaucus {
-  padding: 20px;
-  text-align: center;
-  background:  #BBBBBB;
-  font-size: 30px;
-}
-#classof {
-  position:relative;
-  left: -200px;
-  top: 2px;
-  animation: color-change 1s infinite;
-}
+
 #meetthepresidents {
   text-align: center;
   font-size: 50px;
@@ -118,4 +97,98 @@ body {
 }
 #FaQh2 {
   margin: 0px;
+}
+
+
+#hometitle {
+  text-align: center;
+  background-color: #BBBBBB;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#freshmancaucus {
+  position: relative;
+  font-size: 50px;
+  bottom: 50px;
+}
+#logo {
+  right: -50px;
+  top: 60px;
+  position: relative;
+  background-color: #CCCCCC;
+  height: 150px;
+  width: 300px
+}
+#upcoming {
+  text-align: center;
+}
+#news1 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 300px;
+  width: 40%;
+  left: 580px;
+  top: 30px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#news2 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 300px;
+  width: 30%;
+  left: 200px;
+  top:-30px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#news3 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 300px;
+  width: 30%;
+  left: 1130px;
+  top: -330px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#mag1 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 400px;
+  width:20%;
+  left: 150px;
+  top: -350px;  
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#mag2 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 400px;
+  width:20%;
+  left: 1363px;
+  top: -755px;  
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#mag3 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 400px;
+  width:20%;
+  left: 1363px;
+  top: -753px;  
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+#mag4 {
+  position: relative;
+  background-color: #e2e2e2;
+  height: 400px;
+  width:20%;
+  left: 150px;
+  top: -1148px;  
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
 }
