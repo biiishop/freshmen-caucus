@@ -98,8 +98,6 @@ body {
 #FaQh2 {
   margin: 0px;
 }
-
-
 #hometitle {
   text-align: center;
   background-color: #BBBBBB;
@@ -167,7 +165,7 @@ body {
   background-color: #e2e2e2;
   height: 400px;
   width:20%;
-  left: 1363px;
+  left: 1400px;
   top: -755px;  
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
@@ -177,7 +175,7 @@ body {
   background-color: #e2e2e2;
   height: 400px;
   width:20%;
-  left: 1363px;
+  left: 1400px; 
   top: -753px;  
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
@@ -191,4 +189,11 @@ body {
   top: -1148px;  
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
+}
+#event {
+  position: relative;
+  text-align: center;
+  top: -2100px;
+  width: 100px;
+  left: 900px;
 }
