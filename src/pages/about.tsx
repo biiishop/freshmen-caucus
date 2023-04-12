@@ -52,10 +52,6 @@ export default function About() {
             ) : null}
         </div>
       </div>
-      <div id ="transitiondiv"></div>
-      <div id="FaQ">
-        <h2 id="FaQh2">FaQ</h2>
-      </div>
     </>
   )
 }
