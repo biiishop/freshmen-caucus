@@ -85,6 +85,13 @@ function Home() {
         <p>an event</p>
         <p>an event</p>
       </div>
+      <div id="FaQ">
+        <div id="linebreak"></div>
+        <h2 id="FaQtitle">F A Q</h2>
+        <div id="faqholder">
+          <div id="faq1"></div>
+        </div>
+      </div>
     </>
   );
 }
