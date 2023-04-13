@@ -89,7 +89,10 @@ function Home() {
         <div id="linebreak"></div>
         <h2 id="FaQtitle">F A Q</h2>
         <div id="faqholder">
-          <div id="faq1"></div>
+          <div className="faq faq1"></div>
+          <div className="faq faq2"></div>
+          <div className="faq faq3"></div>
+          <div className="faq faq4"></div>
         </div>
       </div>
     </>
