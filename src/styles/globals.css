@@ -1,7 +1,7 @@
 body {
   background-color: #EEEEEE;
   color: hsl(0, 0%, 20%);
-  height: 1000px;
+  height: 3000px;
 }
 
 #meetthepresidents {
@@ -186,85 +186,63 @@ body {
   position: relative;
   top: -1500px;
 }
-
 #linebreak {
   height: 5px;
   background-color: #BBBBBB;
-  color: #BBBBBB;
+  color:#BBBBBB;
 }
-
 #FaQtitle {
   text-align: center;
   font-size: 70px;
-  color: #333333;
+  color:#333333;
 }
-
 #faqholder {
   height: 700px;
-  background-color: #CCCCCC;
+  background-color:#CCCCCC;
   border-radius: 1%;
-  overflow: hidden; /* hide overflow content */
-  display: flex; /* make it a flex container */
-  justify-content: center; /* center the FAQs horizontally */
 }
-
 .faq {
   height: 500px;
-  width: 400px;
+  width: 30%;
+  position:relative;
+  top: 100px;
   background-color: #BBBBBB;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
-.faq1 {
-  left: 0;
+.faq:hover {
+  transform: scale(1.03);
 }
-
+.stack1 {
+  left: 50px;
+}
+.stack2 {
+  left: calc(30% + 100px);
+}
+.stack3 {
+  left: calc(60% + 150px);
+}
 .faq2 {
-  left: 450px;
+  top: -400px;
 }
-
 .faq3 {
-  left: 900px;
+  top: -900px;
 }
-
-.faq4 {
-  left: 1350px;
-}
-
-.faq5 {
-  left: 1800px;
-}
-
-.faq6 {
-  left: 2250px;
-}
-
 .faq7 {
-  left: 2700px;
+  top: -2900px;
 }
-
-.faq.active {
-  transform: translateX(-100%); /* move active faq to the left */
+.faq4 {
+  top: -1400px;
 }
-
-.faq:not(.active) {
-  cursor: pointer;
-}
-
-.faq:hover:not(.active) {
-  transform: scale(1.1); /* add hover effect */
-}
-
-.faq:hover:not(:last-child):not(.active)::after {
-  content: '';
-  position: absolute;
-  top: 5%;
-  right: -20px;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #BBBBBB;
+.faq4.stack2 {
   z-index: 1;
-  transform: rotate(90deg); /* add arrow */
+}
+.faq5 {
+  top: -1900px;
+}
+.faq5.stack1 {
+  z-index: 1;
+}
+.faq6 {
+  top: -2400px;
 }
