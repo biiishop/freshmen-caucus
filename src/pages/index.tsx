@@ -3,11 +3,50 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from "react";
+import Faq from "react-faq-component";
 
 
 const inter = Inter({ subsets: ['latin'] })
 
+const faqs = [
+  {
+    question: 'What is JavaScript?',
+    answer:
+      'JavaScript is a programming language used for creating dynamic and interactive web pages. It is supported by all major web browsers and can also be used for server-side programming.'
+  },
+  {
+    question: 'What is React?',
+    answer:
+      'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.'
+  },
+  {
+    question: 'What is TypeScript?',
+    answer:
+      'TypeScript is a superset of JavaScript that adds optional static typing and other features to the language. It is maintained by Microsoft and open-source contributors.'
+  },
+  {
+    question: 'What is CSS?',
+    answer:
+      'CSS (Cascading Style Sheets) is a language used for describing the presentation of web pages, including colors, layout, and fonts. It is used in conjunction with HTML and JavaScript to build web applications.'
+  },
+  {
+    question: 'What is HTML?',
+    answer:
+      'HTML (Hypertext Markup Language) is a markup language used for creating web pages and other documents that are viewed in a web browser. It defines the structure and content of a web page using a series of elements and attributes.'
+  }
+];
 
+const style = {
+  top: "-2000px",
+  bgColor: 'white',
+  arrowColor: "red",
+};
+
+const config = {
+  animate: true,
+  arrowIcon: "V",
+  tabFocus: true
+};
 
 function Home() {
   const [news1ontop, setnews1ontop] = useState(false);
@@ -85,15 +124,19 @@ function Home() {
         <p>an event</p>
         <p>an event</p>
       </div>
-      <div id="FaQ">
-        <div id="linebreak"></div>
-        <h2 id="FaQtitle">F A Q</h2>
-        <div id="faqholder">
-          <div className="faq faq1"></div>
-          <div className="faq faq2"></div>
-          <div className="faq faq3"></div>
-          <div className="faq faq4"></div>
-        </div>
+      <div>
+      {faqs.map((faq, index) => (
+          <div
+            key={faq.question}
+            className={`faq`}
+          >
+            <div className="faq-question">
+              {faq.question}
+              <span className="faq-arrow"></span>
+            </div>
+            <div className="faq-answer">{faq.answer}</div>
+          </div>
+        ))}
       </div>
     </>
   );
