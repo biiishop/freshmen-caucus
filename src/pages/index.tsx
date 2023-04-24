@@ -53,10 +53,11 @@ const faqs = [
 ]
 
 export default function Home() {
-
-    const switchstack = (e) => {
-	e.changed = 1
-    }
+  const [stuffhappened, setstuffhappened] = useState(0);
+  const switchstack = (e, index) => {
+    e.changed == 0 ? e.changed = 1 : e.changed = 0;
+    stuffhappened == 0 ? setstuffhappened(1) : setstuffhappened(0);
+  }
 
   return (
     <>
@@ -90,8 +91,8 @@ export default function Home() {
         {faqs.map((faq, index) => ( 
           <div
             key={faq.question}
-            className={`faq ${index%2==1 && faq.changed==1 ? 'stack1' : index%2==0 && faq.changed==1 ? "stack2" : index>2 && faq.changed==0 ? "stack3" : `stack${index}`}  faq${index}`}
-            onClick={() => switchstack(faq)}
+            className={`faq ${ index>3 && index%2==1 && faq.changed==1 ? 'stack1' : index>3 && index%2==0 && faq.changed==1 ? "stack2" : index>3 && faq.changed==0 ? "stack3" : `stack${index}`}  faq${index}`}
+            onClick={() => switchstack(faq, index)}
           >
             <div className="faq-question">{faq.question} </div>
             <div className="faq-answer">{faq.answer}</div>
