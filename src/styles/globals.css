@@ -1,7 +1,6 @@
 body {
   background-color: #EEEEEE;
   color: hsl(0, 0%, 20%);
-  height: 3000px;
 }
 
 #meetthepresidents {
@@ -204,8 +203,8 @@ body {
 .faq {
   height: 500px;
   width: 30%;
-  position:relative;
   top: 100px;
+  position:relative;
   background-color: #BBBBBB;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
