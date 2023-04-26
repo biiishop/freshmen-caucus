@@ -36,13 +36,13 @@ const faqs = [
   {
     question: 'What is JavaScript?',
     answer:
-      'JavaScript is a programming language used for creating dynamic and interactive web pages. It is supported by all major web browsers and can also be used for server-side programming.',
+      'JavaScript is a programming language used for creating dynamic and interactive web pages. It is supported by all major web browsers and can also be used for server-sclassNamee programming.',
     changed: 0
   },
   {
     question: 'What is React?',
     answer:
-      'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.',
+      'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of indivclassNameual developers and companies.',
     changed: 0
   },
   {
@@ -61,33 +61,33 @@ export default function Home() {
 
   return (
     <>
-      <div id="hometitle">
-        <div id="logo"></div>
-        <h1 id="freshmancaucus">Freshman Causus</h1>
+      <div className="hometitle">
+        <div className="logo"></div>
+        <h1 className="freshmancaucus">Freshman Causus</h1>
       </div>
-      <div id="upcoming">
+      <div className="upcoming">
 	{newsormags.map((nom, index)=> (
-	    <div className={`nom${index}`}>
+	    <div className={`nom nom${index}`}>
 		<h3>{nom.title}</h3>
 		<p>{nom.info}</p>
 	    </div>
 	    )
 	)}
       </div>
-      <div id="event">
-        <h1 id="event-title">Events</h1>
+      <div className="event">
+        <h1 className="event-title">Events</h1>
         {events.map((event, index) => (
-		<div className={`event${index}`}>
+		<div className={`event event${index}`}>
 		    <h4>{event.title}</h4>
 		    <p>{event.info}</p>
 		</div>
 	    )
 	)}	
       </div>
-      <div id="FaQ">
-        <div id="linebreak"></div>
-        <h2 id="FaQtitle">F A Q</h2>
-        <div id="faqholder">
+      <div className="FaQ">
+        <div className="linebreak"></div>
+        <h2 className="FaQtitle">F A Q</h2>
+        <div className="faqholder">
         {faqs.map((faq, index) => ( 
           <div
             key={faq.question}
